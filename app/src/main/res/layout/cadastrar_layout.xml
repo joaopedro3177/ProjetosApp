@@ -13,38 +13,34 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
-
-
-
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="start"
-
-        android:src="@drawable/camera" />
-
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/mais"
-       android:layout_marginLeft="100dp"
-        android:layout_marginTop="80dp"
-
-        />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo"
+            android:layout_gravity="start"
+
+            android:src="@drawable/camera" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/mais"
+
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginLeft="250dp"
+            android:src="@drawable/logo"
 
             />
 
     </RelativeLayout>
-
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -61,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira seu nome completo"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -75,8 +71,8 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
             android:id="@+id/txtEmailCadastrar"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira seu email"
             android:inputType="textEmailAddress"
@@ -100,8 +96,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira sua senha "
-            android:maxLength="20"
             android:inputType="textPassword"
+            android:maxLength="20"
 
             />
 
@@ -110,8 +106,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:endIconMode="password_toggle"
         android:layout_marginBottom="10dp"
+        app:endIconMode="password_toggle"
 
         >
 
@@ -121,36 +117,54 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira sua senha novamente"
-            android:maxLength="20"
             android:inputType="textPassword"
+            android:maxLength="20"
 
             />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Insira sua data de nascimento"
-        app:endIconMode="custom"
-         app:endIconDrawable="@drawable/baseline_date_range_24">
-
+        app:endIconDrawable="@drawable/baseline_date_range_24"
+        app:endIconMode="custom">
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"/>
+            android:inputType="date" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEntrarCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#008EFF"
+        android:text="Cadastrar"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnVoltarCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Voltar"
+        android:textSize="15dp"
+        android:textStyle="bold" />
 
 
     <ImageView
-        android:layout_marginTop="50dp"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/cadastro"/>
+        android:layout_marginTop="50dp"
+        android:src="@drawable/cadastro" />
 
 
 </LinearLayout>
