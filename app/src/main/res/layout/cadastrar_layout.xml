@@ -4,18 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:gravity="center_horizontal"
-    android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".CadastrarActivity">
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+
+
+
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/logo" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="start"
+
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/mais"
+       android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+
+        />
+
+    </RelativeLayout>
+
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -28,11 +49,10 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtEmail"
+            android:id="@+id/txtNomeCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:hint="Insira seu email" />
+            android:hint="Insira seu nome completo" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -40,19 +60,43 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:endIconMode="password_toggle"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"
+        app:endIconDrawable="@drawable/baseline_email_24"
+        app:endIconMode="custom">
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:id="@+id/txtEmailCadastrar"
             android:layout_height="wrap_content"
-            android:hint="Insira sua senha"/>
+            android:hint="Insira seu email"
+            android:inputType="textEmailAddress"
+            android:maxLength="100" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        app:endIconMode="password_toggle"
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSenhaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insira sua senha "
+            android:maxLength="20"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -64,15 +108,19 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/txtSenha"
+            android:id="@+id/txtSenhaNovamenteCadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Insira sua senha novamente"
+            android:maxLength="20"
 
 
             />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
 
 </LinearLayout>
