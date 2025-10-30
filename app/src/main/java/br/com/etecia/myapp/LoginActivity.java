@@ -1,6 +1,9 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
+
+
+    TextView txtESqueciSenha;
+    Bu
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +26,18 @@ public class LoginActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        txtESqueciSenha = findViewById(R.id.txtESqueciSenha);
+
+
+
+        txtESqueciSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),RecuperarSenhaActivity.class));
+                finish();
+            }
         });
     }
 }
