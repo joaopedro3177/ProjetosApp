@@ -25,7 +25,7 @@
             android:name=".SacActivity"
             android:exported="false" />
         <activity
-            android:name=".RecuperarSenhaActivity"
+            android:name=".EnviarSenhaActivity"
             android:exported="false" />
         <activity
             android:name=".PlanosActivity"

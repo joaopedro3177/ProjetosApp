@@ -3,6 +3,7 @@ package br.com.etecia.myapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -15,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     TextView txtESqueciSenha;
-    Bu
+    Button btnCadastrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +30,22 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         txtESqueciSenha = findViewById(R.id.txtESqueciSenha);
+        btnCadastrar = findViewById(R.id.btnCadastrar);
 
 
+
+        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), CadastrarActivity.class));
+                finish();
+            }
+        });
 
         txtESqueciSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),RecuperarSenhaActivity.class));
+                startActivity(new Intent(getApplicationContext(), EnviarSenhaActivity.class));
                 finish();
             }
         });
