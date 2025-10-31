@@ -11,6 +11,58 @@
     tools:context=".CarrosActivity">
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha o seu tipo de carro!"
+        android:textSize="26sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#008FFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        />
 
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp">
+
+
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/esporte"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esportivos"
+                android:textSize="26sp"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"
+                android:layout_margin="30dp"
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    </RelativeLayout>
 
 </LinearLayout>
