@@ -14,7 +14,8 @@ import com.google.android.material.button.MaterialButton;
 
 public class EnviarSenhaActivity extends AppCompatActivity {
 
-    MaterialButton mtbtnVoltar;
+    MaterialButton btnVoltarEnviarSenha;
+    MaterialButton btnContinuarEnviarSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +28,21 @@ public class EnviarSenhaActivity extends AppCompatActivity {
             return insets;
         });
 
-        mtbtnVoltar = findViewById(R.id.mtbtnVoltar);
+        btnVoltarEnviarSenha = findViewById(R.id.btnVoltarEnviarSenha);
+        btnContinuarEnviarSenha = findViewById(R.id.btnContinuarEnviarSenha);
+
+
+        btnContinuarEnviarSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), RecuperarSenhaActivity.class));
+                finish();
+            }
+        });
 
 
 
-        mtbtnVoltar.setOnClickListener(new View.OnClickListener() {
+        btnVoltarEnviarSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
