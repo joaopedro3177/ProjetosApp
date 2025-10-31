@@ -73,19 +73,21 @@
         android:id="@+id/btnEntrar"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_gravity="start"
         android:text="Entrar"
         android:textStyle="bold"
         android:backgroundTint="#008EFF"
+        app:cornerRadius="6dp"
 
         />
 
     <Button
         android:id="@+id/btnCadastrar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:text="Cadastrar"
+        app:cornerRadius="6dp"
         android:textStyle="bold"
         android:backgroundTint="#3F51B5"/>
 

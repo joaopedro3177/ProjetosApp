@@ -86,7 +86,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnContinuarEnviarSenha"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_marginTop="10sp"
             android:backgroundTint="#2196F3"
             android:text="Continuar"
@@ -99,7 +99,7 @@
             android:id="@+id/btnEsqueciMinhaSenhaEnviarSenha"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_marginTop="10sp"
             android:text="Esqueci minha senha"
             android:textAllCaps="true"
