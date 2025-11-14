@@ -26,9 +26,20 @@
         android:layout_gravity="left"
         app:strokeWidth="2sp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha o serviço desejado!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:gravity="center_horizontal"
+        />
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
@@ -52,16 +63,15 @@
 
                 <ImageView
                     android:layout_width="100dp"
-                    android:layout_height="50dp"
+                    android:layout_height="100dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/carros" />
 
                 <TextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity=""
                     android:layout_marginTop="5sp"
-                    android:text="CArros"
+                    android:text="  Carros"
                     android:textAllCaps="true"
                     android:textColor="#222162"
                     android:textSize="20dp"
@@ -71,11 +81,11 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardHorarios"
+            android:id="@+id/cardHorario"
             style="@style/Widget.Material3.CardView.Outlined"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:clickable="true"
             android:focusable="true"
             app:cardCornerRadius="6dp"
@@ -88,30 +98,204 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="190dp"
-                    android:layout_height="190dp"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_marginTop="5dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/timer" />
+                    android:src="@drawable/relogio" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_marginTop="5sp"
-                    android:text="@string/horarios"
+                    android:text="Horários"
                     android:textAllCaps="true"
                     android:textColor="#222162"
-                    android:textSize="24sp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardReservas"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/reservas" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="Reservas"
+                    android:textAllCaps="true"
+                    android:textColor="#222162"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLocais"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/local" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="Locais"
+                    android:textAllCaps="true"
+                    android:textColor="#222162"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSac"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sac" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="S.A.C."
+                    android:textAllCaps="true"
+                    android:textColor="#222162"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCarros"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/carros" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="  Carros"
+                    android:textAllCaps="true"
+                    android:textColor="#222162"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
 
+
     </LinearLayout>
 
 
-    
+
+
+
 
 
 
