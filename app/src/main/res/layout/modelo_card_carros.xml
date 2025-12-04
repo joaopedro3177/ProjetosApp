@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Porshe"
+            android:text="Esportivo"
             android:textColor="#2196F3"
             android:textSize="24sp"
             android:textStyle="bold" />

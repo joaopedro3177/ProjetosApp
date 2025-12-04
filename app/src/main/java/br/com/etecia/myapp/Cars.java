@@ -6,7 +6,12 @@ public class Cars {
     private String titulo;
     private int imgCars;
 
+    //constructor
+
     public Cars() {
+
+
+
     }
 
 
