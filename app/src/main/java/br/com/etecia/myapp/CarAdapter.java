@@ -1,5 +1,6 @@
 package br.com.etecia.myapp;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -8,7 +9,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
+    //Variáveis globais
+    private List<Cars> lstCars;
+    private Context context;
+
+    //Criando o construtor com paramêtros
+
+    public CarAdapter(List<Cars> lstCars, Context context) {
+        this.lstCars = lstCars;
+        this.context = context;
+    }
 
     @NonNull
     @Override
@@ -23,7 +36,7 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lstCars.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
