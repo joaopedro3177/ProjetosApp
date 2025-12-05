@@ -28,9 +28,16 @@ public class ListaCarrosActivity extends AppCompatActivity {
         });
         //criando um array de dados
         lstCars = new ArrayList<>();
-        lstCars.add(
-                new Cars()
-        );
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.carros));
 
         //RecycleView
         listaCarros = findViewById(R.id.listaCarros);
