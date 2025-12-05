@@ -1,6 +1,7 @@
 package br.com.etecia.myapp;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -26,11 +27,16 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view;
+        LayoutInflater inflater = LayoutInflater.from(context);
+        view = inflater.inflate(R.layout.modelo_card_carros,parent,false);
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.TxtCardCars.setText(lstCars.get(position).getTitulo());
+        holder.ImgCardCars.setImageResource(lstCars.get(position).getImgCars());
 
     }
 
