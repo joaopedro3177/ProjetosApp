@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -28,21 +29,23 @@ public class ListaCarrosActivity extends AppCompatActivity {
         });
         //criando um array de dados
         lstCars = new ArrayList<>();
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
-        lstCars.add(new Cars("Esportivo", R.drawable.carros));
+        lstCars.add(new Cars("Esportivo", R.drawable.esporte));
+        lstCars.add(new Cars("Popular", R.drawable.popular));
+        lstCars.add(new Cars("USV", R.drawable.carros));
+        lstCars.add(new Cars("Econômico", R.drawable.carros));
+        lstCars.add(new Cars("Antigos", R.drawable.carros));
+        lstCars.add(new Cars("Anual", R.drawable.carros));
+        lstCars.add(new Cars("Seminovos", R.drawable.carros));
+        lstCars.add(new Cars("Em Destaque", R.drawable.carros));
+        lstCars.add(new Cars("Hiper Carros", R.drawable.carros));
+        lstCars.add(new Cars("Off Road", R.drawable.carros));
 
         //RecycleView
         listaCarros = findViewById(R.id.listaCarros);
 
         CarAdapter adapter = new CarAdapter(lstCars, ListaCarrosActivity.this);
+
+        listaCarros.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
 
         //Liga o adaptador a lista
         listaCarros.setAdapter(adapter);
