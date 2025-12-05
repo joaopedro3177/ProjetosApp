@@ -28,7 +28,9 @@ public class ListaCarrosActivity extends AppCompatActivity {
         });
         //criando um array de dados
         lstCars = new ArrayList<>();
-        lstCars.add();
+        lstCars.add(
+                new Cars()
+        );
 
         //RecycleView
         listaCarros = findViewById(R.id.listaCarros);

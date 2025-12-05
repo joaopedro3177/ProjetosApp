@@ -9,11 +9,12 @@ public class Cars {
     //constructor
 
     public Cars() {
-
-
-
     }
 
+    public Cars(String titulo, int imgCars) {
+        this.titulo = titulo;
+        this.imgCars = imgCars;
+    }
 
     public String getTitulo() {
         return titulo;
