@@ -27,5 +27,8 @@ public class ListaCarrosActivity extends AppCompatActivity {
         });
         //RecycleView
         listaCarros = findViewById(R.id.listaCarros);
+        CarAdapter adapter = new CarAdapter(lstCars, ListaCarrosActivity.this);
+        //Liga o adaptador a lista
+        listaCarros.setAdapter(adapter);
     }
 }
